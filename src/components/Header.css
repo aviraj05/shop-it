@@ -8,11 +8,17 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Header shadow */
 }
 
+.header nav {
+    display: flex;
+    justify-content: space-between; /* Space out nav items evenly */
+    align-items: center; /* Center all items vertically */
+    width: 100%;
+}
+
 .header h1 {
     font-size: 28px;
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    letter-spacing: 1px;
+    margin-right: 20px;
 }
 
 .nav-list {
@@ -21,6 +27,11 @@
     gap: 20px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    flex: 1;
+    justify-content: flex-end; /* Move nav items to the right */
+    margin-right: 20px; /* Add spacing near the location dropdown */
+
 }
 
 .nav-list li {
@@ -37,6 +48,8 @@
 }
 
 .search-bar {
+    margin-left: 80px;
+    margin-right: auto;
     display: flex;
     align-items: center;
     background-color: white;
@@ -45,7 +58,7 @@
     padding: 5px 10px; /* Inner spacing */
     gap: 10px; /* Space between input and button */
     height: 40px; /* Height matching the image */
-    width: 300px; /* Adjust as needed for proportion */
+    width: 400px; /* Adjust as needed for proportion */
 }
 
 .search-bar input {
@@ -84,4 +97,63 @@
 .search-bar button img {
     max-width: 80%; /* Properly scales icon */
     max-height: 80%; /* Centers icon within button */
+}
+
+.login-button {
+    display: flex;
+    align-items: center; /* Centers the text and icon */
+    gap: 10px; /* Space between the icon and text */
+    padding: 8px 15px; /* Adds space inside the button */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: 2px solid #218838; /* Slightly darker green border */
+    border-radius: 25px; /* Rounded edges */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    margin-left: auto;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.login-button img {
+    height: 20px; /* Adjust size of the icon */
+    width: 20px;
+}
+
+.login-button:hover {
+    background-color: #e63946; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.location-dropdown {
+    display: flex;
+    align-items: center; /* Aligns icon, location name, and arrow vertically */
+    gap: 10px; /* Space between elements */
+    padding: 5px 10px;
+    background-color: 28a745; /* Background for dropdown */
+    border: 2px solid #28a745; /* Green border */
+    border-radius: 20px; /* Rounded edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 20px; /* Space from the right edge */
+}
+
+.location-dropdown:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+.location-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown-arrow {
+    width: 12px;
+    height: 12px;
+}
+
+.location-dropdown span {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #ffffff; /* Green theme for text */
 }

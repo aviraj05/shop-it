@@ -1,0 +1,51 @@
+.dynamic-banner {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out; /* Smooth transition for image changes */
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: left; /* Align text to the left */
+    color: #1f7d35;
+    padding-left: 10%;
+}
+
+.banner-text {
+    position: relative;
+    z-index: 2; /* Ensure text is above the background image */
+}
+
+.banner-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-text button {
+    padding: 10px 20px;
+    background-color: #ff4d4f; /* Red button color */
+    color: #ffffff; /* White text color */
+    background-color: #28a745; /* Green button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.banner-text button:hover {
+    background-color: #e63946;
+    transform: scale(1.05); /* Slight zoom effect */
+}

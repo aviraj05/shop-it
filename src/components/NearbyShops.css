@@ -1,0 +1,74 @@
+.nearby-shops {
+    margin: 20px 10px;
+    text-align: left;
+    
+}
+
+.nearby-shops h2 {
+    font-size: 28px;
+    color: #1f7d35; /* Green theme color */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.shop-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap onto a new row if necessary */
+    gap: 10px; /* Space between cards */
+    justify-content: center; /* Centers the cards within the section */
+    margin-left: 20px;
+}
+
+.shop-card {
+    display: flex;
+    gap: 15px;
+    border-radius: 10px; /* Rounded edges */
+    background-color: white; /* Card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px;
+    margin: 0 auto; /* Centers the shop cards within the container */
+    align-items: center;
+    width: 30%; /* Ensures three cards fit in one row */
+    max-width: 300px; /* Controls individual card size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover effect */
+    flex: 1 1 calc(33.333% - 10px); /* Responsive sizing for three cards per row */
+}
+
+.shop-card:hover {
+    transform: translateY(-10px); /* Moves the card slightly upward on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
+}
+
+.shop-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.shop-info {
+    flex: 1;
+}
+
+.shop-name {
+    font-size: 20px;
+    color: #28a745; /* Green theme for shop names */
+    margin: 0;
+    font-weight: bold;
+}
+
+.shop-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.promo {
+    color: #e63946; /* Red for promotions */
+    font-weight: bold;
+}
+
+.closing-time {
+    font-style: italic;
+}
