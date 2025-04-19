@@ -1,0 +1,77 @@
+.footer {
+    background-color: #28a745; /* Green theme background */
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    gap: 20px; /* Space between columns */
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-column ul li:hover {
+    text-decoration: underline; /* Adds emphasis on hover */
+}
+
+.contact-number {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25x;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Adds emphasis on hover */
+}
